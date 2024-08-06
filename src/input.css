@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container{
+    max-width: 110rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+@layer components{
+    /* FIRST PART (MAIN PAGE) */
+    .banner{
+        @apply bg-[url('../images/BGDBLUE.jpg')]
+    }
+    .banner__body{
+        @apply flex-col items-center justify-center pb-[10rem]
+    }
+    .banner p{
+        @apply text-center 
+    }
+    .banner p:first-child{
+        @apply text-[140px] text-cyan font-bold pt-[5rem] pb-[2rem] px-0
+    }
+    .banner p:nth-child(2){
+        @apply text-white text-[1.6rem] px-[22rem] pb-[8rem]
+    }
+    .banner p:last-child{
+        @apply text-cyan
+    }
+
+    /* SECOND PART (MAIN PAGE) */
+    .banner__aboutme {
+        @apply bg-bblack
+    }
+    .banner__aboutme__body{
+        @apply flex gap-[8rem] px-[6rem]
+    }
+    .banner__aboutme__text{
+        @apply text-dwhite text-center flex-col   
+    }
+    .banner__aboutme__body img{
+        @apply w-[20rem] 
+    }
+    .banner__aboutme__name{
+        @apply pb-[2rem] text-[3rem] text-start
+    }
+    .banner__aboutme__desc{
+        @apply text-justify text-[1.4rem]
+    }
+    .banner__aboutme__desc p:first-child{
+        @apply text-justify text-[1.4rem] pb-[2rem]
+    }
+
+}
