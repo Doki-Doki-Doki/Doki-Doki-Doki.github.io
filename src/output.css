@@ -642,6 +642,7 @@ video {
   gap: 8rem;
   padding-left: 6rem;
   padding-right: 6rem;
+  padding-bottom: 6rem;
 }
 
 .banner__aboutme__text {
@@ -670,6 +671,195 @@ video {
   padding-bottom: 2rem;
   text-align: justify;
   font-size: 1.4rem;
+}
+
+/* THIRD PART (MAIN PAGE) */
+
+.banner__educ {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 51 / var(--tw-bg-opacity));
+}
+
+.banner__educ img {
+  width: 20rem;
+}
+
+.banner__educ__body {
+  display: flex;
+  gap: 8rem;
+  padding: 6rem;
+}
+
+.banner__educ__content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__educ__title p {
+  padding-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.banner__educ__college {
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.banner__educ__shs {
+  font-size: 1.5rem;
+}
+
+.banner__educ__achievements p {
+  text-align: center;
+}
+
+/* FOURTH PART(MAIN PAGE) */
+
+.banner__resume {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 12 16 / var(--tw-bg-opacity));
+}
+
+.banner__resume__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__resume__title {
+  padding-bottom: 5rem;
+  font-size: 4rem;
+}
+
+.banner__resume__body img {
+  width: 40rem;
+  padding-bottom: 2rem;
+}
+
+/* FIFTH PART(MAIN PAGE) */
+
+.banner__projects {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 12 16 / var(--tw-bg-opacity));
+}
+
+.banner__projects__body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner__projects__body p {
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(102 252 241 / var(--tw-text-opacity));
+}
+
+/* CONTACTS(MAIN PAGE) */
+
+.banner__contacts {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 51 / var(--tw-bg-opacity));
+}
+
+.banner__contacts__body {
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-top: 4rem;
+  padding-bottom: 10rem;
+}
+
+.banner__contacts__title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__contacts__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner__contacts__content a {
+  font-size: 1.4rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__contacts__left {
+  display: flex;
+  max-width: 20rem;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.banner__contacts__right {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Social Media */
+
+.banner__contacts__facebook {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner__contacts__linkedin {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner__contacts__github {
+  display: flex;
+  gap: 2rem;
+}
+
+.banner__contacts__mail {
+  display: flex;
+  gap: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  border-top-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(107 114 128 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 48 49 / var(--tw-bg-opacity));
+}
+
+.footer__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.2rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.footer__copyright {
+  font-size: 1.2rem;
 }
 
 .container{

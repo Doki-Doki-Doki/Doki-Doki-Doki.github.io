@@ -34,7 +34,7 @@
         @apply bg-bblack
     }
     .banner__aboutme__body{
-        @apply flex gap-[8rem] px-[6rem]
+        @apply flex gap-[8rem] px-[6rem] pb-[6rem]
     }
     .banner__aboutme__text{
         @apply text-dwhite text-center flex-col   
@@ -52,4 +52,101 @@
         @apply text-justify text-[1.4rem] pb-[2rem]
     }
 
+    /* THIRD PART (MAIN PAGE) */
+    .banner__educ{
+        @apply bg-dblue
+    }
+    .banner__educ img{
+        @apply w-[20rem]
+    }
+    .banner__educ__body{
+        @apply flex gap-[8rem] p-[6rem] 
+    }
+    .banner__educ__content{
+        @apply text-dwhite flex flex-col justify-between w-[100%]
+    }
+    .banner__educ__title p{
+        @apply text-[3rem] pb-[2rem]
+    }
+    .banner__educ__college{
+        @apply text-[1.5rem] pb-[1rem]
+    }
+    .banner__educ__shs{
+        @apply text-[1.5rem]
+    }
+    .banner__educ__achievements p{
+        @apply text-center
+    }
+
+    /* FOURTH PART(MAIN PAGE) */
+    .banner__resume{
+        @apply bg-bblack
+    }
+    .banner__resume__body{
+        @apply flex flex-col items-center p-[6rem] text-dwhite
+    }
+    .banner__resume__title{
+        @apply text-[4rem] pb-[5rem]
+    }
+    .banner__resume__body img{
+        @apply w-[40rem] pb-[2rem]
+    }
+
+    /* FIFTH PART(MAIN PAGE) */
+    .banner__projects{
+        @apply bg-bblack
+    }
+    .banner__projects__body {
+        @apply flex items-center justify-center
+    }
+    .banner__projects__body p{
+        @apply text-[6rem] text-cyan text-center font-bold px-[7rem] py-[8rem]
+    }
+
+    /* CONTACTS(MAIN PAGE) */
+    .banner__contacts {
+        @apply bg-dblue
+    }
+    .banner__contacts__body{
+        @apply flex flex-col gap-[7rem] pt-[4rem] px-[6rem] pb-[10rem]
+    }
+    .banner__contacts__title{
+        @apply text-dwhite font-semibold text-center text-[4rem]
+    }
+    .banner__contacts__content{
+        @apply flex justify-between
+    }
+    .banner__contacts__content a{
+        @apply text-dwhite text-[1.4rem]
+    }
+    .banner__contacts__left{
+        @apply flex flex-col gap-[3rem] max-w-[20rem]
+    }
+    .banner__contacts__right{
+        @apply flex flex-col gap-[3rem]
+    }
+    /* Social Media */
+    .banner__contacts__facebook{
+        @apply flex gap-[2rem]
+    }
+    .banner__contacts__linkedin{
+        @apply flex gap-[2rem]
+    }
+    .banner__contacts__github{
+        @apply flex gap-[2rem]
+    }
+    .banner__contacts__mail{
+        @apply flex gap-[2rem]
+    }
+
+    /* FOOTER */
+    .footer{
+        @apply bg-ggray border-t-2 border-gray-500
+    }
+    .footer__body{
+        @apply text-dwhite text-[2.2rem] flex justify-between items-center
+    }
+    .footer__copyright{
+        @apply text-[1.2rem]
+    }
 }
