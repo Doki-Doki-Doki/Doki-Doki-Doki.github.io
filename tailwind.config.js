@@ -11,7 +11,7 @@ module.exports = {
         bblack: '#0B0C10',
         dblue: '#000033',
         ggray: '#323031'
-      }
+      },
     },
   },
   plugins: [],

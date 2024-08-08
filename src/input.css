@@ -20,6 +20,21 @@ body{
 }
 
 @layer components{
+
+    /* HEADER */
+    .header{
+        @apply bg-ggray fixed w-[100%] z-50
+    }
+    .header .container{
+        @apply py-[1.5rem] px-[2.5rem]
+    }
+    .header__body{
+        @apply text-dwhite flex justify-between items-center
+    }
+    .header__nav{
+        @apply flex gap-[2rem]
+    }
+
     /* FIRST PART (MAIN PAGE) */
     .banner{
         @apply bg-[url('../images/BGDBLUE.jpg')]
@@ -45,19 +60,19 @@ body{
 
     /* SECOND PART (MAIN PAGE) */
     .banner__aboutme {
-        @apply bg-bblack
+        @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__aboutme__body{
-        @apply flex gap-[8rem] px-[6rem] pb-[6rem] pt-[3.8rem]
+        @apply flex gap-[8rem] px-[6rem] pb-[6rem] pt-[8rem]
     }
     .banner__aboutme__text{
-        @apply text-dwhite text-center flex-col   
+        @apply text-dwhite font-normal text-center flex-col leading-8 
     }
     .banner__aboutme__imgcontainer{
         @apply w-[90rem] relative
     }
     .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
-        @apply absolute rounded-[4rem] w-full h-full opacity-[100%] transition-opacity duration-100
+        @apply absolute rounded-[4rem] w-full h-[25rem] opacity-[100%] transition-opacity duration-100
     }
     .banner__aboutme__imgcontainer img.me-second{
         @apply opacity-0
@@ -80,7 +95,7 @@ body{
 
     /* THIRD PART (MAIN PAGE) */
     .banner__educ{
-        @apply bg-dblue
+        @apply bg-gradient-to-b from-dblue to-bblack
     }
     .banner__educ img{
         @apply w-[20rem] rounded-[4rem]
@@ -109,7 +124,7 @@ body{
 
     /* FOURTH PART(MAIN PAGE) */
     .banner__resume{
-        @apply bg-bblack
+        @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__resume__body{
         @apply flex flex-col items-center p-[6rem] text-dwhite
