@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 .container{
     max-width: 110rem;
     margin: 0 auto;
@@ -14,7 +25,7 @@
         @apply bg-[url('../images/BGDBLUE.jpg')]
     }
     .banner__body{
-        @apply flex-col items-center justify-center pb-[10rem]
+        @apply flex flex-col items-center justify-center pb-[10rem] relative
     }
     .banner p{
         @apply text-center 
@@ -23,10 +34,13 @@
         @apply text-[140px] text-cyan font-bold pt-[5rem] pb-[2rem] px-0
     }
     .banner p:nth-child(2){
-        @apply text-white text-[1.6rem] px-[22rem] pb-[8rem]
+        @apply text-white text-[1.6rem] px-[22rem] pb-[6rem]
     }
-    .banner p:last-child{
-        @apply text-cyan
+    .banner__body a{
+        @apply text-cyan text-[3rem] text-center flex items-center justify-center absolute translate-y-[250px]
+    }
+    .banner__body a:hover{
+        @apply text-[3.4rem] absolute translate-y-[252px]
     }
 
     /* SECOND PART (MAIN PAGE) */
@@ -34,13 +48,25 @@
         @apply bg-bblack
     }
     .banner__aboutme__body{
-        @apply flex gap-[8rem] px-[6rem] pb-[6rem]
+        @apply flex gap-[8rem] px-[6rem] pb-[6rem] pt-[3.8rem]
     }
     .banner__aboutme__text{
         @apply text-dwhite text-center flex-col   
     }
-    .banner__aboutme__body img{
-        @apply w-[20rem] 
+    .banner__aboutme__imgcontainer{
+        @apply w-[90rem] relative
+    }
+    .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
+        @apply absolute rounded-[4rem] w-full h-full opacity-[100%] transition-opacity duration-100
+    }
+    .banner__aboutme__imgcontainer img.me-second{
+        @apply opacity-0
+    }
+    .banner__aboutme__imgcontainer:hover img.me-first{
+        @apply opacity-0
+    }
+    .banner__aboutme__imgcontainer:hover img.me-second{
+        @apply opacity-100
     }
     .banner__aboutme__name{
         @apply pb-[2rem] text-[3rem] text-start
@@ -57,7 +83,7 @@
         @apply bg-dblue
     }
     .banner__educ img{
-        @apply w-[20rem]
+        @apply w-[20rem] rounded-[4rem]
     }
     .banner__educ__body{
         @apply flex gap-[8rem] p-[6rem] 
@@ -76,6 +102,9 @@
     }
     .banner__educ__achievements p{
         @apply text-center
+    }
+    .banner__educ__achievements a:hover p{
+        @apply underline
     }
 
     /* FOURTH PART(MAIN PAGE) */
@@ -108,7 +137,10 @@
         @apply bg-dblue
     }
     .banner__contacts__body{
-        @apply flex flex-col gap-[7rem] pt-[4rem] px-[6rem] pb-[10rem]
+        @apply flex flex-col gap-[7rem] pt-[4rem] px-[5rem] pb-[10rem]
+    }
+    .banner__contacts__body i{
+        @apply text-[3rem]
     }
     .banner__contacts__title{
         @apply text-dwhite font-semibold text-center text-[4rem]
@@ -127,26 +159,56 @@
     }
     /* Social Media */
     .banner__contacts__facebook{
-        @apply flex gap-[2rem]
+        @apply flex gap-[2rem] items-center
+    }
+    .banner__contacts__facebook a:last-child:hover{
+        @apply flex gap-[2rem] items-center underline
     }
     .banner__contacts__linkedin{
-        @apply flex gap-[2rem]
+        @apply flex gap-[2rem] items-center
+    }
+    .banner__contacts__linkedin a:last-child:hover{
+        @apply flex gap-[2rem] items-center underline
     }
     .banner__contacts__github{
-        @apply flex gap-[2rem]
+        @apply flex gap-[2rem] items-center
+    }
+    .banner__contacts__github a:last-child:hover{
+        @apply flex gap-[2rem] items-center underline
     }
     .banner__contacts__mail{
-        @apply flex gap-[2rem]
+        @apply flex gap-[2rem] items-center
+    }
+    .banner__contacts__mail a:last-child:hover{
+        @apply flex gap-[2rem] items-center underline
     }
 
     /* FOOTER */
     .footer{
         @apply bg-ggray border-t-2 border-gray-500
     }
+    .footer .container{
+        @apply py-[1.2rem]
+    }
     .footer__body{
-        @apply text-dwhite text-[2.2rem] flex justify-between items-center
+        @apply text-dwhite text-[2.2rem] flex items-center justify-between px-[3rem]
     }
     .footer__copyright{
         @apply text-[1.2rem]
+    }
+    .footer__logos{
+        @apply flex gap-[1.1rem]
+    }
+    .footer__logos a:first-child:hover{
+        @apply text-cyan
+    }
+    .footer__logos a:nth-child(2):hover{
+        @apply text-cyan
+    }
+    .footer__logos a:last-child:hover{
+        @apply text-cyan
+    }
+    .footer__copyright{
+        @apply text-[1rem]
     }
 }

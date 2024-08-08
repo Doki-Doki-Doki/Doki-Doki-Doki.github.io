@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./output.css">
     <script src="https://kit.fontawesome.com/82876e7150.js" crossorigin="anonymous"></script>
 </head>
@@ -13,11 +16,11 @@
             <div class="banner__body">
                 <p>WELCOME</p>
                 <p>Want to know more about me? Feel free to scroll down</p>
-                <p>(ARROW DOWN)</p>
+                <a href="#abtme"><i class="fa-solid fa-caret-down"></i></a>
             </div>
         </div>
     </div>
-    <div class="banner__aboutme">
+    <div class="banner__aboutme" id="abtme">
         <div class="container">
             <div class="banner__aboutme__body">
                 <div class="banner__aboutme__text">
@@ -27,7 +30,10 @@
                         <p>An aspiring software engineer who is eager to learn new things about software and game development. I am focusing on enhancing my skills in the field of programming. I am also motivated to work with individuals who share a common goal for my personal and professional growth.</p>
                     </div>
                 </div>
-                <img src="../images/ME-PIC.jfif" alt="">
+                <div class="banner__aboutme__imgcontainer">
+                    <img src="../images/ME-PIC.jfif" alt="" class="me-first">
+                    <img src="../images/me2.jfif" alt="" class="me-second">
+                </div>
             </div>                
         </div>
     </div>
@@ -77,8 +83,8 @@
                 <div class="banner__contacts__content">
                     <div class="banner__contacts__left">
                         <div class="banner__contacts__facebook">
-                            <a href=""><i class="fa-brands fa-facebook"></i></a>
-                            <a href="">https://www.facebook.com/ryleandrei.cabudol</a>
+                            <a href="" class="fb-link"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="" class="fb-link">https://www.facebook.com/ryleandrei.cabudol</a>
                         </div>
                         <div class="banner__contacts__linkedin">
                             <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -108,7 +114,7 @@
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
                 </div>
                 <div class="footer__copyright">
-                    <p>COPYRIGHT 2024 ALL RIGHTS RESERVED</p>
+                    <p>COPYRIGHTS 2024 ALL RIGHTS RESERVED</p>
                 </div>
             </div>
         </div>
