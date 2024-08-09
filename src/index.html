@@ -14,18 +14,18 @@
     <header class="header">
         <div class="container">
             <div class="header__body">
-                <div class="header__name">RYLE ANDREI</div>
+                <div class="header__name"><a href="#banner">RYLE ANDREI</a></div>                
                 <div class="header__nav">
-                    <a href="">About me</a>
-                    <a href="">Education</a>
-                    <a href="">Resume</a>
-                    <a href="">Projects</a>
-                    <a href="">Contacts</a>
+                    <a href="#abtme" class="text-dwhite hover:text-yellow-400">About me</a>
+                    <a href="#educ" class="text-dwhite hover:text-yellow-400">Education</a>
+                    <a href="#resume" class="text-dwhite hover:text-yellow-400">Resume</a>
+                    <a href="#projects" class="text-dwhite hover:text-yellow-400">Projects</a>
+                    <a href="#contacts" class="text-dwhite hover:text-yellow-400">Contacts</a>
                 </div>
             </div>
         </div>
     </header>
-    <div class="banner">
+    <div class="banner" id="banner">
         <div class="container">
             <div class="banner__body">
                 <p>WELCOME</p>
@@ -51,7 +51,7 @@
             </div>                
         </div>
     </div>
-    <div class="banner__educ">
+    <div class="banner__educ" id="educ">
         <div class="container">
             <div class="banner__educ__body">
                 <img src="../images/GRAD-PIC.JPG" alt="">
@@ -74,7 +74,7 @@
             </div>            
         </div>              
     </div>
-    <div class="banner__resume">
+    <div class="banner__resume" id="resume">
         <div class="container">
             <div class="banner__resume__body">
                 <div class="banner__resume__title">Need to check my resume?</div>
@@ -83,14 +83,14 @@
             </div>
         </div>
     </div>
-    <div class="banner__projects">
+    <div class="banner__projects" id="projects">
         <div class="container">
             <div class="banner__projects__body">
-                <p>Click here to see some of my projects</p>
+                <a href=""><p>Click here to see some of my projects</p></a>
             </div>
         </div>
     </div>
-    <div class="banner__contacts">
+    <div class="banner__contacts" id="contacts">
         <div class="container">
             <div class="banner__contacts__body">
                 <div class="banner__contacts__title">CONTACT DETAILS</div>
@@ -133,5 +133,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

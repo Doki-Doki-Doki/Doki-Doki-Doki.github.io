@@ -23,10 +23,13 @@ body{
 
     /* HEADER */
     .header{
-        @apply bg-ggray fixed w-[100%] z-50
+        @apply bg-ggray fixed w-[100%] z-50 opacity-0 transform -translate-y-full transition-opacity transition-transform duration-300 ease-linear        
+    }
+    .header.active{
+        @apply opacity-100 transform translate-y-0
     }
     .header .container{
-        @apply py-[1.5rem] px-[2.5rem]
+        @apply py-[1.2rem] px-[2.5rem]
     }
     .header__body{
         @apply text-dwhite flex justify-between items-center
@@ -69,10 +72,10 @@ body{
         @apply text-dwhite font-normal text-center flex-col leading-8 
     }
     .banner__aboutme__imgcontainer{
-        @apply w-[90rem] relative
+        @apply w-[90rem] h-[26rem] relative
     }
     .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
-        @apply absolute rounded-[4rem] w-full h-[25rem] opacity-[100%] transition-opacity duration-100
+        @apply absolute rounded-[4rem] w-full h-full opacity-[100%] transition-opacity duration-100
     }
     .banner__aboutme__imgcontainer img.me-second{
         @apply opacity-0
@@ -101,7 +104,7 @@ body{
         @apply w-[20rem] rounded-[4rem]
     }
     .banner__educ__body{
-        @apply flex gap-[8rem] p-[6rem] 
+        @apply flex gap-[8rem] p-[6rem] pt-[5rem]
     }
     .banner__educ__content{
         @apply text-dwhite flex flex-col justify-between w-[100%]
@@ -135,6 +138,9 @@ body{
     .banner__resume__body img{
         @apply w-[40rem] pb-[2rem]
     }
+    .banner__resume__body a{
+        @apply underline
+    }
 
     /* FIFTH PART(MAIN PAGE) */
     .banner__projects{
@@ -144,7 +150,8 @@ body{
         @apply flex items-center justify-center
     }
     .banner__projects__body p{
-        @apply text-[6rem] text-cyan text-center font-bold px-[7rem] py-[8rem]
+        text-shadow: 2px 2px 5px #1663be;
+        @apply text-[6rem] text-cyan text-center font-bold px-[7rem] py-[10rem]
     }
 
     /* CONTACTS(MAIN PAGE) */
@@ -152,7 +159,7 @@ body{
         @apply bg-dblue
     }
     .banner__contacts__body{
-        @apply flex flex-col gap-[7rem] pt-[4rem] px-[5rem] pb-[10rem]
+        @apply flex flex-col gap-[7rem] pt-[7rem] px-[5rem] pb-[10rem]
     }
     .banner__contacts__body i{
         @apply text-[3rem]
@@ -164,7 +171,7 @@ body{
         @apply flex justify-between
     }
     .banner__contacts__content a{
-        @apply text-dwhite text-[1.4rem]
+        @apply text-dwhite text-[1.2rem]
     }
     .banner__contacts__left{
         @apply flex flex-col gap-[3rem] max-w-[20rem]

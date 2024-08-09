@@ -594,13 +594,27 @@ video {
   position: fixed;
   z-index: 50;
   width: 100%;
+  --tw-translate-y: -100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   --tw-bg-opacity: 1;
   background-color: rgb(50 48 49 / var(--tw-bg-opacity));
+  opacity: 0;
+  transition-property: opacity;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+}
+
+.header.active {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  opacity: 1;
 }
 
 .header .container {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -707,12 +721,13 @@ video {
 
 .banner__aboutme__imgcontainer {
   position: relative;
+  height: 26rem;
   width: 90rem;
 }
 
 .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second {
   position: absolute;
-  height: 25rem;
+  height: 100%;
   width: 100%;
   border-radius: 4rem;
   opacity: 100%;
@@ -769,6 +784,7 @@ video {
   display: flex;
   gap: 8rem;
   padding: 6rem;
+  padding-top: 5rem;
 }
 
 .banner__educ__content {
@@ -831,6 +847,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.banner__resume__body a {
+  text-decoration-line: underline;
+}
+
 /* FIFTH PART(MAIN PAGE) */
 
 .banner__projects {
@@ -844,16 +864,17 @@ video {
   justify-content: center;
 }
 
-.banner__projects__body p {
+.banner__projects__body p{
+  text-shadow: 2px 2px 5px #1663be;
   padding-left: 7rem;
   padding-right: 7rem;
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   text-align: center;
   font-size: 6rem;
   font-weight: 700;
   --tw-text-opacity: 1;
-  color: rgb(102 252 241 / var(--tw-text-opacity));
+  color: rgb(102 252 241 / var(--tw-text-opacity))
 }
 
 /* CONTACTS(MAIN PAGE) */
@@ -869,7 +890,7 @@ video {
   gap: 7rem;
   padding-left: 5rem;
   padding-right: 5rem;
-  padding-top: 4rem;
+  padding-top: 7rem;
   padding-bottom: 10rem;
 }
 
@@ -891,7 +912,7 @@ video {
 }
 
 .banner__contacts__content a {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1017,6 +1038,11 @@ video {
   font-size: 1rem;
 }
 
+.text-dwhite {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 html{
   scroll-behavior: smooth;
 }
@@ -1032,4 +1058,9 @@ body{
   max-width: 110rem;
   margin: 0 auto;
   padding: 2rem;
+}
+
+.hover\:text-yellow-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(250 204 21 / var(--tw-text-opacity));
 }
