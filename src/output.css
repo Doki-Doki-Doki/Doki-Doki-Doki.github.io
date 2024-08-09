@@ -647,8 +647,10 @@ video {
   padding-bottom: 10rem;
 }
 
-.banner p {
+.banner__body p {
   text-align: center;
+  --tw-text-opacity: 1;
+  color: rgb(102 252 241 / var(--tw-text-opacity));
 }
 
 .banner p:first-child {
@@ -658,8 +660,6 @@ video {
   padding-bottom: 2rem;
   font-size: 140px;
   font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(102 252 241 / var(--tw-text-opacity));
 }
 
 .banner p:nth-child(2) {
@@ -830,20 +830,31 @@ video {
 
 .banner__resume__body {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  gap: 5rem;
   padding: 6rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.banner__resume__left {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.banner__resume__left a {
+  text-align: center;
+}
+
 .banner__resume__title {
   padding-bottom: 5rem;
   font-size: 4rem;
+  line-height: 4rem;
 }
 
 .banner__resume__body img {
-  width: 40rem;
+  width: 20rem;
   padding-bottom: 2rem;
 }
 
@@ -1038,6 +1049,76 @@ video {
   font-size: 1rem;
 }
 
+/* SMALL MEDIA */
+
+@media screen and (max-width: 640px) {
+  .banner__body p:first-child{
+    font-weight: medium;
+    font-size: 70px;
+    color: cyan;
+  }
+
+  .banner__body p:nth-child(2){
+    padding: 3rem;
+  }
+
+  .banner__aboutme__body{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    padding-top: 5rem;
+    align-items: center;
+  }
+
+  .banner__aboutme__text{
+    order: 2;
+  }
+
+  .banner__aboutme__imgcontainer{
+    position: static;
+    order: 1;
+    width: 70%;
+    height: 20rem;
+    box-sizing: border-box;
+  }
+
+  .banner__aboutme__imgcontainer img.me-first{
+    position: static;
+    width: 100%;
+  }
+
+  .banner__aboutme__imgcontainer:hover img.me-first{
+    opacity: 100%;
+  }
+
+  .banner__aboutme__imgcontainer img.me-second{
+    position: static;
+    width: 0rem;
+  }
+
+  .banner__aboutme__text{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .banner__aboutme__name{
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0rem;
+  }
+
+  .banner__aboutme__desc p{
+    font-size: 1.2rem;
+  }
+
+  .banner__aboutme__desc p:first-child{
+    font-size: 1.2rem;
+  }
+}
+
 .text-dwhite {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1049,7 +1130,6 @@ html{
 
 body{
   font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
