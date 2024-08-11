@@ -1058,6 +1058,10 @@ video {
     display: none;
   }
 
+  .banner__body{
+    padding-top: 5rem;
+  }
+
   .banner__body p:first-child{
     font-weight: medium;
     font-size: 50px;
@@ -1067,15 +1071,17 @@ video {
 
   .banner__body p:nth-child(2){
     padding: 3rem;
+    line-height: 25px;
   }
 
   .banner__aboutme__body{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1rem;
     padding: 1rem;
     padding-top: 3rem;
     align-items: center;
+    height: auto;
   }
 
   .banner__aboutme__text{
@@ -1085,32 +1091,34 @@ video {
   .banner__aboutme__desc{
     line-height: 20px;
     font-size: small;
+    text-align: center;
   }
 
   .banner__aboutme__imgcontainer{
     position: static;
-    display: block;
-    order: 1;
-    width: 70%;
-    height: 20rem;
+    width: 15rem;
     box-sizing: border-box;
-  }
-
-  .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
-    position: static;
+    margin-bottom: 2rem;
   }
 
   .banner__aboutme__imgcontainer img.me-first{
-    display: block;
+    position: static;
     width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    float: none;
   }
 
   .banner__aboutme__imgcontainer:hover img.me-first{
     opacity: 100%;
+    display: block;
+    transform: none;
   }
 
   .banner__aboutme__imgcontainer img.me-second{
-    width: 0rem;
+    display: none;
+    position: static;
+    transform: none;
   }
 
   .banner__aboutme__text{
@@ -1132,6 +1140,7 @@ video {
 
   .banner__aboutme__desc p:first-child{
     font-size: 1.2rem;
+    text-align: center;
   }
 }
 
