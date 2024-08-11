@@ -1053,7 +1053,7 @@ video {
 
 /* SMALL MEDIA */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   .header{
     display: none;
   }
@@ -1083,7 +1083,7 @@ video {
   }
 
   .banner__aboutme__desc{
-    line-height: 5px;
+    line-height: 20px;
     font-size: small;
   }
 
@@ -1094,6 +1094,10 @@ video {
     width: 70%;
     height: 20rem;
     box-sizing: border-box;
+  }
+
+  .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
+    position: static;
   }
 
   .banner__aboutme__imgcontainer img.me-first{
@@ -1128,9 +1132,6 @@ video {
 
   .banner__aboutme__desc p:first-child{
     font-size: 1.2rem;
-  }
-
-  .banner__educ__body img{
   }
 }
 
