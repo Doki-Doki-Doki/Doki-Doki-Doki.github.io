@@ -65,13 +65,13 @@ body{
         @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__aboutme__body{
-        @apply flex gap-[8rem] px-[6rem] pb-[6rem] pt-[8rem]
+        @apply flex gap-[8rem] justify-between px-[6rem] pb-[6rem] pt-[7rem] h-[40rem]
     }
     .banner__aboutme__text{
         @apply text-dwhite font-normal text-center flex-col leading-8 
     }
     .banner__aboutme__imgcontainer{
-        @apply w-[90rem] h-[26rem] relative
+        @apply w-[100rem] h-auto relative
     }
     .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
         @apply absolute rounded-[4rem] w-full h-full opacity-[100%] transition-opacity duration-100
@@ -241,10 +241,14 @@ body{
 
     /* SMALL MEDIA */
     @media screen and (max-width: 640px) {
+        .header{
+            display: none;
+        }
         .banner__body p:first-child{
             font-weight: medium;
-            font-size: 70px;
+            font-size: 50px;
             color: cyan;
+            padding: 0 2rem 0 2rem;
         }
         .banner__body p:nth-child(2){
             padding: 3rem;
@@ -253,30 +257,34 @@ body{
         .banner__aboutme__body{
             display: flex;
             flex-direction: column;
-            gap: 2rem;
-            padding: 3rem;
-            padding-top: 5rem;
+            gap: 3rem;
+            padding: 1rem;
+            padding-top: 3rem;
             align-items: center;
         }
         .banner__aboutme__text{
             order: 2;
         }
+        .banner__aboutme__desc{
+            line-height: 5px;
+            font-size: small;
+        }
         .banner__aboutme__imgcontainer{
             position: static;
+            display: block;
             order: 1;
             width: 70%;
             height: 20rem;
             box-sizing: border-box;
         }
         .banner__aboutme__imgcontainer img.me-first{
-            position: static;
+            display: block;
             width: 100%;
         }
         .banner__aboutme__imgcontainer:hover img.me-first{
             opacity: 100%;
         }
         .banner__aboutme__imgcontainer img.me-second{
-            position: static;
             width: 0rem;
         }
         .banner__aboutme__text{
@@ -295,6 +303,10 @@ body{
         }
         .banner__aboutme__desc p:first-child{
             font-size: 1.2rem;
+        }
+
+        .banner__educ__body img{
+
         }
     }
 }

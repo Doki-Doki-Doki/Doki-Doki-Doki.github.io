@@ -703,11 +703,13 @@ video {
 
 .banner__aboutme__body {
   display: flex;
+  height: 40rem;
+  justify-content: space-between;
   gap: 8rem;
   padding-left: 6rem;
   padding-right: 6rem;
   padding-bottom: 6rem;
-  padding-top: 8rem;
+  padding-top: 7rem;
 }
 
 .banner__aboutme__text {
@@ -721,8 +723,8 @@ video {
 
 .banner__aboutme__imgcontainer {
   position: relative;
-  height: 26rem;
-  width: 90rem;
+  height: auto;
+  width: 100rem;
 }
 
 .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second {
@@ -1052,10 +1054,15 @@ video {
 /* SMALL MEDIA */
 
 @media screen and (max-width: 640px) {
+  .header{
+    display: none;
+  }
+
   .banner__body p:first-child{
     font-weight: medium;
-    font-size: 70px;
+    font-size: 50px;
     color: cyan;
+    padding: 0 2rem 0 2rem;
   }
 
   .banner__body p:nth-child(2){
@@ -1065,9 +1072,9 @@ video {
   .banner__aboutme__body{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
-    padding: 3rem;
-    padding-top: 5rem;
+    gap: 3rem;
+    padding: 1rem;
+    padding-top: 3rem;
     align-items: center;
   }
 
@@ -1075,8 +1082,14 @@ video {
     order: 2;
   }
 
+  .banner__aboutme__desc{
+    line-height: 5px;
+    font-size: small;
+  }
+
   .banner__aboutme__imgcontainer{
     position: static;
+    display: block;
     order: 1;
     width: 70%;
     height: 20rem;
@@ -1084,7 +1097,7 @@ video {
   }
 
   .banner__aboutme__imgcontainer img.me-first{
-    position: static;
+    display: block;
     width: 100%;
   }
 
@@ -1093,7 +1106,6 @@ video {
   }
 
   .banner__aboutme__imgcontainer img.me-second{
-    position: static;
     width: 0rem;
   }
 
@@ -1116,6 +1128,9 @@ video {
 
   .banner__aboutme__desc p:first-child{
     font-size: 1.2rem;
+  }
+
+  .banner__educ__body img{
   }
 }
 
