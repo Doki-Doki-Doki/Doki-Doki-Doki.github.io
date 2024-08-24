@@ -71,7 +71,7 @@ body{
         @apply text-dwhite font-normal text-center flex-col leading-8 
     }
     .banner__aboutme__imgcontainer{
-        @apply w-[100rem] h-auto relative
+        @apply w-[90rem] h-auto relative
     }
     .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second{
         @apply absolute rounded-[4rem] w-full h-full opacity-[100%] transition-opacity duration-100
@@ -114,8 +114,14 @@ body{
     .banner__educ__college{
         @apply text-[1.5rem] pb-[1rem]
     }
+    .banner__educ__college p:last-child{
+        @apply text-[1.2rem] pb-[1rem]
+    }
     .banner__educ__shs{
         @apply text-[1.5rem]
+    }
+    .banner__educ__shs p:last-child{
+        @apply text-[1.2rem] pb-[1rem]
     }
     .banner__educ__achievements p{
         @apply text-center
@@ -161,7 +167,7 @@ body{
 
     /* CONTACTS(MAIN PAGE) */
     .banner__contacts {
-        @apply bg-dblue
+        @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__contacts__body{
         @apply flex flex-col gap-[7rem] pt-[7rem] px-[5rem] pb-[10rem]
@@ -239,14 +245,57 @@ body{
         @apply text-[1rem]
     }
 
+    /* FOR THE ACHIEVEMENTS PAGE */
+    .achievements-header{
+        @apply bg-ggray fixed w-[100%] z-50
+    }
+    .achievements-header .container{
+        @apply py-[1.2rem] px-[2.5rem]
+    }
+    .achievements-header__body{
+        @apply text-dwhite flex justify-between items-center
+    }
+    .achievements-header__nav{
+        @apply flex gap-[2rem]
+    }
+    /* ACH-BANNER */
+    .ach__banner{
+        @apply pt-[3rem] bg-dblue text-dwhite
+    }
+    .ach__banner__body{
+        @apply flex flex-col
+    }
+    .ach__banner__title{
+        @apply text-[4rem] text-center p-[1rem] border-b
+    }
+    .ach__banner__sect{
+        @apply flex justify-around py-[5rem] border-b
+    }
+    .ach__banner__sect:last-child{
+        @apply border-none
+    }
+    .ach__banner__left p:first-child{
+        @apply text-[1.5rem]
+    }
+    .ach__banner__left img{
+        @apply w-[10rem] h-auto pt-[2rem]
+    }
+    .ach__banner__right{
+        @apply max-w-[20rem] flex flex-col gap-[1rem]
+    }
+    .ach__banner__course p:first-child{
+        @apply text-[1.5rem]
+    }
+    
+    
+
     /* SMALL MEDIA */
     @media screen and (max-width: 720px) {
         .header{
             display: none;
         }
-        
         .banner__body{
-            padding-top: 5rem;
+            padding-top: 7rem;
         }
         .banner__body p:first-child{
             font-weight: medium;
@@ -274,8 +323,8 @@ body{
         }
         .banner__aboutme__desc{
             line-height: 20px;
-            font-size: small;
-            text-align: center;
+            font-size: 1rem;
+            text-align: justify;
         }
         .banner__aboutme__imgcontainer{
             position: static;
@@ -308,7 +357,7 @@ body{
         }
         .banner__aboutme__name{
             font-size: 1.5rem;
-            text-align: center;
+            text-align: left;
             padding: 0rem;
         }
         .banner__aboutme__desc p{
@@ -316,8 +365,27 @@ body{
         }
         .banner__aboutme__desc p:first-child{
             font-size: 1.2rem;
-            text-align: center;
+            text-align: left;
         }
-
+        
+        .banner__educ__body{
+            display: flex;
+            flex-direction: column;
+            padding: 1rem;
+            align-items: center;
+        }
+        .banner__educ__body img{
+            width: 15rem;
+            height: auto;
+            border-radius: 1rem;
+        }
+        .banner__educ__content{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+        }
+        .banner__educ__title p{
+            font-size: 1.8rem;
+        }
     }
 }

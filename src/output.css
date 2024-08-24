@@ -724,7 +724,7 @@ video {
 .banner__aboutme__imgcontainer {
   position: relative;
   height: auto;
-  width: 100rem;
+  width: 90rem;
 }
 
 .banner__aboutme__imgcontainer img.me-first, .banner__aboutme__imgcontainer img.me-second {
@@ -808,8 +808,18 @@ video {
   font-size: 1.5rem;
 }
 
+.banner__educ__college p:last-child {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
 .banner__educ__shs {
   font-size: 1.5rem;
+}
+
+.banner__educ__shs p:last-child {
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
 
 .banner__educ__achievements p {
@@ -893,8 +903,11 @@ video {
 /* CONTACTS(MAIN PAGE) */
 
 .banner__contacts {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 51 / var(--tw-bg-opacity));
+  background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
+  --tw-gradient-from: #0B0C10 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(11 12 16 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #000033 var(--tw-gradient-to-position);
 }
 
 .banner__contacts__body {
@@ -1051,6 +1064,78 @@ video {
   font-size: 1rem;
 }
 
+/* FOR THE ACHIEVEMENTS PAGE */
+
+.achievements-header {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 48 49 / var(--tw-bg-opacity));
+}
+
+.achievements-header .container {
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+/* ACH-BANNER */
+
+.ach__banner {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 51 / var(--tw-bg-opacity));
+  padding-top: 3rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.ach__banner__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.ach__banner__title {
+  border-bottom-width: 1px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 4rem;
+}
+
+.ach__banner__sect {
+  display: flex;
+  justify-content: space-around;
+  border-bottom-width: 1px;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.ach__banner__sect:last-child {
+  border-style: none;
+}
+
+.ach__banner__left p:first-child {
+  font-size: 1.5rem;
+}
+
+.ach__banner__left img {
+  height: auto;
+  width: 10rem;
+  padding-top: 2rem;
+}
+
+.ach__banner__right {
+  display: flex;
+  max-width: 20rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ach__banner__course p:first-child {
+  font-size: 1.5rem;
+}
+
 /* SMALL MEDIA */
 
 @media screen and (max-width: 720px) {
@@ -1059,7 +1144,7 @@ video {
   }
 
   .banner__body{
-    padding-top: 5rem;
+    padding-top: 7rem;
   }
 
   .banner__body p:first-child{
@@ -1090,8 +1175,8 @@ video {
 
   .banner__aboutme__desc{
     line-height: 20px;
-    font-size: small;
-    text-align: center;
+    font-size: 1rem;
+    text-align: justify;
   }
 
   .banner__aboutme__imgcontainer{
@@ -1130,7 +1215,7 @@ video {
 
   .banner__aboutme__name{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
     padding: 0rem;
   }
 
@@ -1140,7 +1225,30 @@ video {
 
   .banner__aboutme__desc p:first-child{
     font-size: 1.2rem;
-    text-align: center;
+    text-align: left;
+  }
+
+  .banner__educ__body{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+  }
+
+  .banner__educ__body img{
+    width: 15rem;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  .banner__educ__content{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .banner__educ__title p{
+    font-size: 1.8rem;
   }
 }
 
