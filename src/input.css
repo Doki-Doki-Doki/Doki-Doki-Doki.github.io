@@ -39,7 +39,7 @@ body{
 
     /* FIRST PART (MAIN PAGE) */
     .banner{
-        @apply bg-[url('../images/BGDBLUE.jpg')]
+        @apply bg-bblack
     }
     .banner__body{
         @apply flex flex-col items-center justify-center pb-[10rem] relative
@@ -51,7 +51,7 @@ body{
         @apply text-[140px] font-bold pt-[5rem] pb-[2rem] px-0
     }
     .banner p:nth-child(2){
-        @apply text-white text-[1.6rem] px-[22rem] pb-[6rem]
+        @apply text-cyan text-[1.6rem] px-[22rem] pb-[6rem]
     }
     .banner__body a{
         @apply text-cyan text-[3rem] text-center flex items-center justify-center absolute translate-y-[250px]
@@ -65,7 +65,7 @@ body{
         @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__aboutme__body{
-        @apply flex gap-[8rem] justify-between px-[6rem] pb-[6rem] pt-[7rem] h-[40rem]
+        @apply flex gap-[8rem] justify-between px-[6rem] pb-[4rem] pt-[7rem] h-[40rem] border-t
     }
     .banner__aboutme__text{
         @apply text-dwhite font-normal text-center flex-col leading-8 
@@ -86,7 +86,7 @@ body{
         @apply opacity-100
     }
     .banner__aboutme__name{
-        @apply pb-[2rem] text-[3rem] text-start
+        @apply pb-[3rem] text-[3rem] text-start text-cyan
     }
     .banner__aboutme__desc{
         @apply text-justify text-[1.4rem]
@@ -100,28 +100,28 @@ body{
         @apply bg-gradient-to-b from-dblue to-bblack
     }
     .banner__educ img{
-        @apply w-[20rem] rounded-[4rem]
+        @apply w-[20rem] rounded-[4rem] border border-gray-400
     }
     .banner__educ__body{
-        @apply flex gap-[8rem] p-[6rem] pt-[5rem]
+        @apply flex gap-[4rem] p-[6rem] pt-[5rem] border-t
     }
     .banner__educ__content{
-        @apply text-dwhite flex flex-col justify-between w-[100%]
+        @apply text-dwhite flex flex-col justify-between w-[100%] border-l-2 pl-[4rem]
     }
     .banner__educ__title p{
-        @apply text-[3rem] pb-[2rem]
+        @apply text-center text-[3rem] pb-[3rem] text-cyan
     }
     .banner__educ__college{
         @apply text-[1.5rem] pb-[1rem]
     }
     .banner__educ__college p:last-child{
-        @apply text-[1.2rem] pb-[1rem]
+        @apply text-[1.2rem] pb-[1rem] text-green-400
     }
     .banner__educ__shs{
         @apply text-[1.5rem]
     }
     .banner__educ__shs p:last-child{
-        @apply text-[1.2rem] pb-[1rem]
+        @apply text-[1.2rem] pb-[1rem] text-green-400
     }
     .banner__educ__achievements p{
         @apply text-center
@@ -135,7 +135,7 @@ body{
         @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__resume__body{
-        @apply flex gap-[5rem] items-center p-[6rem] text-dwhite
+        @apply flex gap-[5rem] items-center p-[6rem] text-dwhite border-t
     }
     .banner__resume__left{
         @apply flex flex-col gap-[3rem]
@@ -155,7 +155,7 @@ body{
 
     /* FIFTH PART(MAIN PAGE) */
     .banner__projects{
-        @apply bg-bblack
+        @apply bg-bblack border-y
     }
     .banner__projects__body {
         @apply flex items-center justify-center
@@ -170,13 +170,13 @@ body{
         @apply bg-gradient-to-b from-bblack to-dblue
     }
     .banner__contacts__body{
-        @apply flex flex-col gap-[7rem] pt-[7rem] px-[5rem] pb-[10rem]
+        @apply flex flex-col gap-[4rem] pt-[7rem] px-[5rem] pb-[10rem]
     }
     .banner__contacts__body i{
         @apply text-[3rem]
     }
     .banner__contacts__title{
-        @apply text-dwhite font-semibold text-center text-[4rem]
+        @apply text-dwhite font-semibold text-center text-[4rem] border-b pb-[1rem]
     }
     .banner__contacts__content{
         @apply flex justify-between
@@ -286,8 +286,58 @@ body{
     .ach__banner__course p:first-child{
         @apply text-[1.5rem]
     }
-    
-    
+    /* FOR THE PROJECTS PAGE */
+    .proj__banner{
+        @apply pt-[3rem] bg-bblack text-dwhite
+    }
+    .proj__banner__body{
+        @apply flex flex-col
+    }
+    .proj__banner__title{
+        @apply text-[4rem] text-center p-[1rem] border-b
+    }
+    .proj-header{
+        @apply bg-ggray fixed w-[100%] z-50
+    }
+    .proj-header .container{
+        @apply py-[1.2rem] px-[2.5rem]
+    }
+    .proj-header__body{
+        @apply text-dwhite flex justify-between items-center
+    }
+    .proj-header__nav{
+        @apply flex gap-[2rem]
+    }
+    .proj__banner__body{
+        @apply flex flex-col
+    }
+    .proj__banner__webdev{
+        @apply flex flex-col items-center pt-[3rem] pb-[4rem] gap-[3rem] border-b
+    }
+    .proj__banner__webdev p{
+        @apply text-[2rem]
+    }
+    .proj__banner__slider{
+        @apply w-[80%] h-[400px] flex justify-center gap-[1rem] mx-auto
+    }
+    .proj__banner__slider img{
+        @apply w-[20%] h-[100%] object-cover rounded-[10px] border-2 border-gray-400 ease-in-out duration-500
+    }
+    .proj__banner__slider img:hover{
+        @apply w-[60%]
+    }
+    .proj__banner__desc{
+        @apply flex py-[4rem] gap-[3rem] border-b
+    }
+    .proj__banner__desc:nth-child(even){
+        @apply flex-row-reverse
+    }
+    .proj__desc__right{
+        @apply flex flex-col gap-[2rem]
+    }
+    .proj__banner__desc img{
+        @apply w-[45rem] h-auto border border-gray-400
+    }
 
     /* SMALL MEDIA */
     @media screen and (max-width: 720px) {
