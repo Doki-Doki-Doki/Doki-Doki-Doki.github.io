@@ -412,6 +412,7 @@ body{
         }
         .banner__aboutme__desc p{
             font-size: 1.2rem;
+            text-align: left;
         }
         .banner__aboutme__desc p:first-child{
             font-size: 1.2rem;
@@ -422,6 +423,7 @@ body{
             display: flex;
             flex-direction: column;
             padding: 1rem;
+            padding-top: 5rem;
             align-items: center;
         }
         .banner__educ__body img{
@@ -437,5 +439,64 @@ body{
         .banner__educ__title p{
             font-size: 1.8rem;
         }
+        .banner__educ__content{
+            padding-left: 0;
+            border: none;
+        }
+        .banner__resume__body{
+            display: flex;
+            flex-direction: column;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .banner__resume__title{
+            text-align: center;
+            font-size: 3rem;
+            line-height: 3rem;
+            padding-bottom: 0;
+        }
+        .banner__projects__body a p{
+            line-height: 4rem;
+            font-size: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 5rem;
+            padding-bottom: 7rem;
+        }
+        .banner__contacts__body{
+            padding: 5rem 2rem 5rem 2rem;
+        }
+        .banner__contacts__title p{
+            text-align: center;
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+        .banner__contacts__content{
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .banner__contacts__content i{
+            font-size: 2rem;
+        }
+        .banner__contacts__left{
+            gap: 2rem;
+        }
+        .banner__contacts__right{
+            gap: 2rem;
+        }
+        .banner__contacts__facebook{
+            word-break: break-word;
+        }
+        .footer__body{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 0;
+        }
+        .footer__copyright p{
+            text-align: center;
+        }
+        
+
     }
 }
