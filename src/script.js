@@ -10,3 +10,17 @@ window.addEventListener('scroll', function() {
         header.classList.remove('active');
     }
 });
+
+const achButton = document.querySelector('.button span');
+const nav = document.querySelector('.achievements-header');
+
+achButton.addEventListener('click', () =>{
+    achButton.classList.toggle('open');
+    nav.classList.toggle('open');
+});
+
+const projNav = document.querySelector('.proj-header');
+
+achButton.addEventListener('click', () =>{
+    projNav.classList.toggle('open');
+});
