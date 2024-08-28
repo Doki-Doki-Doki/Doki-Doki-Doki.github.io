@@ -350,7 +350,7 @@ body{
         @apply w-[60%]
     }
     .proj__banner__desc{
-        @apply flex py-[4rem] gap-[3rem] border-b
+        @apply flex pt-[4rem] pb-[4rem] gap-[3rem] border-b
     }
     .proj__banner__desc:nth-child(even){
         @apply flex-row-reverse
@@ -592,6 +592,7 @@ body{
         .ach__banner__course p:first-child{
             @apply text-green-500
         }
+
         .proj-header{
             position: fixed;
             max-width: 8rem;
@@ -613,6 +614,81 @@ body{
         }
         .proj-header .header__name{
             display: none;
+        }
+        .proj__banner__slider{
+            display: none;
+        }
+        .proj__banner{
+            padding-top: 0;
+        }
+        .proj__banner__title p{
+            line-height: 5rem;
+        }
+        .proj__banner__webdev{
+            padding-bottom: 0;
+            border-bottom: 0;
+        }
+        .proj__banner__desc{
+            flex-direction: column;
+        }
+        .proj__banner__desc:nth-child(even){
+            flex-direction: column;
+        }
+        .proj__banner .proj__banner__desc:first-child{
+            padding-top: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1536px) {
+        .banner__body{
+            padding-top: 5rem;
+        }
+        .banner__body p:first-child{
+            font-size: 10rem;
+        }
+        .banner__body p:nth-child(2){
+            padding-left: 30rem;
+            padding-right: 30rem;
+        }
+        .banner__aboutme__body{
+            height: 50rem;
+            align-items: start;
+        }
+        .banner__aboutme__name{
+            padding-top: 5rem;
+        }
+        .banner__aboutme__imgcontainer{
+            width: 80rem;
+            height: 35rem;
+        }
+        .banner__educ__body{
+            padding: 7rem 7rem 7rem 7rem;
+        }
+        .banner__resume__body{
+            padding: 7rem 6rem 6rem 6rem;
+            gap: 2rem;
+        }
+        .banner__resume__body img{
+            width: 26rem;
+        }
+        .banner__resume__title{
+            font-size: 6rem;
+            line-height: 7rem;
+        }
+        .banner__projects__body p{
+            padding: 14rem 10rem 16rem 10rem;
+        }
+        .banner__contacts__content{
+            justify-content: space-around;
+        }
+        .proj__desc__right p{
+            font-size: 1.5rem;
+        }
+        .proj__banner__desc{
+            gap: 5rem;
+        }
+        .proj__banner__desc img{
+            width: 50rem;
         }
     }
 }
